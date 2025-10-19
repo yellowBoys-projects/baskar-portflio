@@ -2,25 +2,27 @@ import React, { useState } from "react";
 import AccordionItem from "../components/Accordion";
 import { motion } from "framer-motion";
 
+import Image from '../assets/freelancher.png'
+
 export default function Services() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const items = [
     {
-      title: "UI/UX Design",
-      content: "User research, wireframing, interactive prototypes, and visually engaging interfaces that tell stories."
+      title: "Web Develpor",
+      content: "Build responsive, fast, and user-friendly websites using HTML, CSS, JavaScript, and React."
     },
     {
-      title: "Graphic Design",
-      content: "Logo systems, brand identities, marketing visuals, and digital illustrations that enhance brand appeal."
+      title: "Video Editing",
+      content: "Create professional videos for YouTube, social media, or business promotions."
     },
     {
-      title: "Web Design",
-      content: "Modern, responsive, SEO-friendly website layouts built with component-based systems."
+      title: "Affilate Marketing",
+      content: "Promote products, drive traffic, and increase sales using smart strategies."
     },
     {
-      title: "Branding",
-      content: "Creating unified identities, tone, and experiences that make brands memorable and human-centered."
+      title: "Digital Marketing",
+      content: "Effective digital marketing strategies to grow your brand online."
     }
   ];
 
@@ -46,7 +48,7 @@ export default function Services() {
                 WHAT I CAN DO FOR YOU
               </h3>
               <p className="text-gray-600 dark:text-gray-300 max-w-xl leading-relaxed">
-                As a digital designer, I transform creative concepts into experiences that connect deeply and spark innovation.
+                Hi, I’m Baskar D – a Freelance Web Developer, Video Editor, and Digital Marketer.
               </p>
             </div>
           </div>
@@ -78,7 +80,7 @@ export default function Services() {
             <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl blur-2xl opacity-30 animate-pulse" />
             <div className="relative rounded-2xl overflow-hidden rotate-3 shadow-2xl">
               <img
-                src="https://framerusercontent.com/images/IUYreEo8ON7qCLgK2tgDOW0xoI.jpg"
+                src={Image}
                 alt="Creative workspace"
                 className="w-full h-full object-cover"
               />

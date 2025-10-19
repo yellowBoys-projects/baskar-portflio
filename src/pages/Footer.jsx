@@ -17,10 +17,10 @@ export default function Footer() {
               <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center font-bold text-white text-lg">
                 DS
               </div>
-              <span className="text-xl font-bold">Duncan Shen</span>
+              <span className="text-xl font-bold">D.Baskar</span>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
-              Digital designer and Framer developer passionate about crafting meaningful and impactful digital experiences.
+              Hi, I'm Baskar D — Hi, a Freelance Web Developer, Video Editor, and Digital Marketer.
             </p>
             <div className="flex items-center gap-3">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
@@ -75,7 +75,7 @@ export default function Footer() {
                 <div>
                   <div className="text-sm text-gray-400">Email</div>
                   <div className="font-medium hover:text-blue-400 transition-colors duration-200">
-                    designer@example.com
+                    kondapurambaskar@example.com
                   </div>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function Footer() {
                 <div>
                   <div className="text-sm text-gray-400">Call Today</div>
                   <div className="font-medium hover:text-green-400 transition-colors duration-200">
-                    +1 (555) 123-4567
+                    +91 7094892052
                   </div>
                 </div>
               </div>
@@ -104,7 +104,7 @@ export default function Footer() {
                 <div>
                   <div className="text-sm text-gray-400">Location</div>
                   <div className="font-medium hover:text-purple-400 transition-colors duration-200">
-                    San Francisco, CA
+                   Chennai, Tamil Nadu, India
                   </div>
                 </div>
               </div>
@@ -117,7 +117,7 @@ export default function Footer() {
           <div className="text-gray-400 text-sm">
             © Copyright {currentYear}. All Rights Reserved by{' '}
             <a href="#" className="text-white hover:text-blue-400 transition-colors duration-200 font-semibold">
-              Duncan Shen
+              D.Baskar
             </a>
           </div>
           {/* Add social icons if needed */}

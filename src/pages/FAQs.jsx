@@ -7,22 +7,22 @@ export default function FAQ() {
   const faqs = [
     {
       question: "What services do you offer?",
-      answer: "I provide UI/UX design, web design, graphic design, branding, and custom website templates tailored to your business needs."
+      answer: "I build responsive, modern, and fast websites using HTML, CSS, JavaScript, React, and other web technologies. I also provide website maintenance and optimization services."
     },
     {
-      question: "How does the design process work?",
-      answer: "I start with understanding your requirements, then create wireframes, followed by high-fidelity designs, and finally deliver responsive and interactive templates."
+      question: "How does the development process work?",
+      answer: "We start by understanding your requirements, then I create a project plan and design mockups (if needed). After your approval, I develop the website, test it thoroughly, and deliver a fully functional site."
     },
     {
       question: "How long does a project usually take?",
       answer: "Depending on complexity, projects typically take 1–4 weeks from start to finish."
     },
     {
-      question: "What do I need to provide before starting a project?",
-      answer: "Please share your project brief, branding guidelines, reference designs, and any content that should be included in the template."
+      question: "How long does a project usually take?",
+      answer: "Project timelines depend on complexity."
     },
     {
-      question: "Do you offer revisions?",
+      question: "What do I need to provide before starting a project?",
       answer: "Yes! I provide multiple rounds of revisions to ensure the final design matches your vision perfectly."
     },
     {

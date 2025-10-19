@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import Image from '../assets/freelancher.png'
+
 /**
  * Contact section: left portrait, right form, floating "Hi" badge.
  * Basic client-side validation + accessible labels.
@@ -13,7 +15,7 @@ export default function Contact() {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  const services = ["UI/UX Design", "Web Design", "Branding", "Consulting"];
+  const services = ["Web Develpor", "Video editing", "Branding", "Consulting"];
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -34,7 +36,7 @@ export default function Contact() {
         <div className="relative w-full max-w-xs">
           <div className="rounded-2xl overflow-hidden shadow-lg">
             <img
-              src="https://framerusercontent.com/images/IUYreEo8ON7qCLgK2tgDOW0xoI.jpg"
+              src={Image}
               alt="portrait"
               className="w-full h-auto object-cover"
             />
@@ -65,7 +67,7 @@ export default function Contact() {
                 name="name"
                 value={form.name}
                 onChange={handleChange}
-                placeholder="John Smith"
+                placeholder="D.baskar"
                 className="w-full rounded-full bg-gray-100 px-4 py-3 focus:outline-none"
                 required
               />
@@ -79,7 +81,7 @@ export default function Contact() {
                 type="email"
                 value={form.email}
                 onChange={handleChange}
-                placeholder="johnsmith@gmail.com"
+                placeholder="kondapurambaskar@gmail.com"
                 className="w-full rounded-full bg-gray-100 px-4 py-3 focus:outline-none"
                 required
               />

@@ -1,6 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+
+import Image from '../assets/freelancher.png'
+
 export default function About() {
   const socials = [
     {
@@ -58,17 +61,16 @@ export default function About() {
               <span className="font-semibold text-gray-900 dark:text-white">
                 Baskar D
               </span>{" "}
-              — a passionate freelancer creating unique web designs,
-              templates, and digital experiences that drive results.
+              —  Hi, a Freelance Web Developer, Video Editor, and Digital Marketer..
             </p>
           </div>
 
           {/* Stats Grid */}
           <div className="grid grid-cols-3 gap-8 mb-14">
             {[
-              { value: "5+", label: "Years Experience" },
-              { value: "100+", label: "Projects Done" },
-              { value: "40+", label: "Happy Clients" },
+              { value: "1+", label: "Years Experience" },
+              { value: "10+", label: "Projects Done" },
+              { value: "5+", label: "Happy Clients" },
             ].map((stat, idx) => (
               <div key={idx} className="text-center lg:text-left group">
                 <div className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-3 transition-colors duration-300">
@@ -142,7 +144,7 @@ export default function About() {
 
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl group">
               <img
-                src="https://framerusercontent.com/images/IUYreEo8ON7qCLgK2tgDOW0xoI.jpg"
+                src={Image}
                 alt="Baskar D - Freelancer"
                 className="w-full h-auto max-w-md object-cover group-hover:scale-105 transition-transform duration-500"
               />

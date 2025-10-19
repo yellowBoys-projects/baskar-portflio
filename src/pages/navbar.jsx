@@ -19,7 +19,7 @@ const Header = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const navItems = ["Home", "Work", "Services", "About", "Testimonials", "Blog"];
+  const navItems = ["Home", "Work", "Services", "About", "Blog"];
 
   return (
     <header
@@ -69,7 +69,7 @@ const Header = () => {
               className="px-6 py-3 bg-gray-900 text-white font-semibold rounded-xl 
               hover:bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-300 shadow-md"
             >
-              Get in Touch
+              Book Order
             </motion.button>
           </div>
 

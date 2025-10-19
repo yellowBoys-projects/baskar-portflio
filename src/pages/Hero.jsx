@@ -9,6 +9,8 @@ import FAQs from './FAQs'
 import Contact from './Contact'
 import Footer from './Footer'
 
+import Image from '../assets/freelancher.png'
+
 export default function  HeroSection(){
   return(
     <>
@@ -31,7 +33,7 @@ export default function  HeroSection(){
   locationLine = "Chennai, Tamil Nadu, India",
   ctaText = 'View Work',
   ctaHref = '#work',
-  imageUrl = '',
+  imageUrl = Image,
 }) {
   const [index, setIndex] = useState(0);
 
@@ -62,7 +64,7 @@ export default function  HeroSection(){
             <div className="mt-4 h-1 w-28 mx-auto md:mx-0 rounded-full bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400" aria-hidden="true"></div>
 
             {/* Animated Title */}
-            <div className="mt-4 text-lg md:text-2xl font-light text-gray-600 dark:text-gray-300 tracking-wide h-8 md:h-10 relative">
+            <div className="mt-4 text-lg md:text-2xl font-light text-gray-500 dark:text-gray-300 tracking-wider h-8 md:h-10 relative">
               <AnimatePresence mode="wait">
                 <motion.span
                   key={index}
