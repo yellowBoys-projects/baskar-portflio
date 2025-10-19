@@ -45,7 +45,7 @@ export default function  HeroSection(){
   }, [titles.length]);
 
   return (
-    <section className="min-h-screen bg-white dark:bg-gray-900 flex items-center justify-center px-6 sm:px-8 lg:px-12">
+    <section className="mt-[6rem] min-h-screen bg-white dark:bg-gray-900 flex items-center justify-center px-6 sm:px-8 lg:px-12">
       <div className="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
         {/* Left: Text */}
@@ -72,7 +72,7 @@ export default function  HeroSection(){
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.5 }}
-                  className="absolute"
+                  className="absolute left-0 right-0 mx-auto"
                 >
                   {titles[index]}
                 </motion.span>
