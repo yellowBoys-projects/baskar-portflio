@@ -98,7 +98,7 @@ export default function About() {
                 Email Me
               </div>
               <div className="text-lg text-gray-600 dark:text-gray-300 group-hover:text-blue-600 transition-colors duration-200 font-medium">
-                baskardigital@example.com
+                kondapurambaskar@gmail.com
               </div>
             </div>
           </div>
