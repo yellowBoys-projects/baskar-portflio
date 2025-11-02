@@ -15,12 +15,6 @@ export default function  HeroSection(){
   return(
     <>
 <Navbar/>
-    <Hero/>
-    <Service/>
-    <About/>
-    <FAQs/>
-    <Contact/>
-    <Footer/>
 
     </>
   )

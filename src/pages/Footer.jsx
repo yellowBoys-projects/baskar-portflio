@@ -49,7 +49,7 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-6 text-white">Services</h3>
             <ul className="space-y-4">
-              {['UI/UX Design', 'Web Design', 'Framer Development', 'Brand Identity', 'Design Systems'].map((service) => (
+              {['Affilate Marketing', 'Web Design', 'Andriod Development', 'Brand Identity', 'Social Ads'].map((service) => (
                 <li key={service}>
                   <a 
                     href="#" 
@@ -126,7 +126,7 @@ export default function Footer() {
         {/* Bottom Note */}
         <div className="text-center pt-8 border-t border-gray-800">
           <p className="text-gray-500 text-sm">
-            Crafted with passion • Built with Framer • Designed for impact
+           **Crafted with passion • Built with code • Designed for impact**
           </p>
         </div>
       </div>

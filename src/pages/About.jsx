@@ -61,15 +61,15 @@ export default function About() {
               <span className="font-semibold text-gray-900 dark:text-white">
                 Baskar D
               </span>{" "}
-              —  Hi, a Freelance Web Developer, Video Editor, and Digital Marketer..
+              —  Hi, a Freelance Web Developer, Android Develpor, Video Editor , Affilate Marketer and  Digital Marketer..
             </p>
           </div>
 
           {/* Stats Grid */}
           <div className="grid grid-cols-3 gap-8 mb-14">
             {[
-              { value: "1+", label: "Years Experience" },
-              { value: "10+", label: "Projects Done" },
+              { value: "0", label: "Years Experience" },
+              { value: "0+", label: "Projects Done" },
               { value: "5+", label: "Happy Clients" },
             ].map((stat, idx) => (
               <div key={idx} className="text-center lg:text-left group">
