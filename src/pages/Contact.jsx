@@ -25,7 +25,7 @@ export default function Contact() {
   }
 
   return (
-    <section className="bg-gradient-to-br from-purple-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20 px-4 sm:px-6 lg:px-12">
+    <section className=" overflow-x-hidden bg-gradient-to-br from-purple-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20 px-4 sm:px-6 lg:px-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
         
         {/* Left Image Section */}
