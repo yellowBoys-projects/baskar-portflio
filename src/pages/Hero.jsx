@@ -10,6 +10,7 @@ import Contact from './Contact'
 import Footer from './Footer'
 
 import Image from '../assets/freelancher.png'
+import { Link } from 'react-router-dom';
 
 export default function  HeroSection(){
   return(
@@ -32,7 +33,7 @@ export default function  HeroSection(){
   titles = ['Web Developer', 'Video Editor', 'Digital Marketer'],
   locationLine = "Chennai, Tamil Nadu, India",
   ctaText = 'View Work',
-  ctaHref = '#work',
+  ctaHref = 'view-work',
   imageUrl = Image,
 }) {
   const [index, setIndex] = useState(0);
@@ -86,16 +87,16 @@ export default function  HeroSection(){
 
           {/* CTA */}
           <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:gap-4 gap-3 justify-center md:justify-start">
-            <a
-              href={ctaHref}
+            <Link
+              to={ctaHref}
               className="inline-flex items-center justify-center border border-transparent px-6 py-3 bg-gray-900 dark:bg-white dark:text-gray-900 text-white rounded-none text-sm font-semibold uppercase tracking-wide hover:opacity-95"
             >
               {ctaText}
-            </a>
+            </Link>
             <div className="mt-2 sm:mt-0">
-              <a href="#contact" className="inline-block text-sm font-medium text-gray-700 dark:text-gray-200 hover:underline">
+              <Link to="hire-me" className="inline-block text-sm font-medium text-gray-700 dark:text-gray-200 hover:underline">
                 Hire me →
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -122,10 +123,12 @@ export default function  HeroSection(){
             )}
 
             <div className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Selected projects</h3>
+             <Link to={'selected-projects'}>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white hover:text-blue-500">Selected projects</h3>
+             </Link>
               <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Modern UI, Motion-rich Framer prototypes and responsive websites.</p>
               <div className="mt-4 flex items-center gap-3">
-                <a href="#work" className="text-sm font-medium underline">See case studies</a>
+                <Link to="case-study" className="text-sm font-medium underline">See case studies</Link>
                 <span className="text-xs text-gray-400">•</span>
                 <span className="text-xs text-gray-400">Available for freelance</span>
               </div>

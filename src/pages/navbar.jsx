@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -19,7 +20,14 @@ const Header = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const navItems = ["Home", "Work", "Services", "About", "Blog"];
+   const navItems = [
+    { id: 1, name: "Home", href: "/" },
+    { id: 2, name: "Work", href: "view-work" },
+    { id: 3, name: "Services", href: "service-com" },
+    { id: 4, name: "About", href: "about-com" },
+    { id: 5, name: "Blog", href: "blog-com" },
+    { id: 6, name: "Contact", href: "contact-com" },
+  ];
 
   return (
     <header
@@ -48,29 +56,32 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8  ">
             {navItems.map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
+              <Link
+                key={item.id}
+                to={`${item.href}`}
                 className="relative text-gray-700 dark:text-gray-300 font-medium 
                 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px]
                 after:w-0 after:bg-gradient-to-r from-blue-600 to-purple-600 
                 after:transition-all after:duration-300
                 hover:after:w-full hover:text-blue-600"
               >
-                {item}
-              </a>
+                {item.name}
+              </Link>
             ))}
           </nav>
 
           {/* CTA Button */}
           <div className="hidden md:block">
+            <Link to="book-order" >
+
             <motion.button
               whileHover={{ scale: 1.05 }}
               className="px-6 py-3 bg-gray-900 text-white font-semibold rounded-xl 
               hover:bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-300 shadow-md"
-            >
+              >
               Book Order
             </motion.button>
+              </Link>
           </div>
 
           {/* Mobile Menu Button */}

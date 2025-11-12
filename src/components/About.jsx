@@ -1,11 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Navbar from '../pages/navbar'
 
 
 import Image from '../assets/freelancher.png'
 import { Link } from "react-router-dom";
 
-export default function About() {
+export default function AboutCom() {
   const socials = [
     {
       border: "blue-500",
@@ -33,6 +34,9 @@ export default function About() {
 
   return (
     <section className=" overflow-x-hidden py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white via-gray-50 to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+      <div className="mb-20">
+                 <Navbar/>
+             </div>
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 items-center">
 
         {/* Content Section */}
