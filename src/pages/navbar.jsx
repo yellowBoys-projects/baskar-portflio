@@ -122,12 +122,12 @@ const Header = () => {
               <div className="flex flex-col gap-4 pl-5">
                 {navItems.map((item) => (
                   <a
-                    key={item}
-                    href={`#${item.toLowerCase()}`}
+                    key={item.id}
+                    href={`#${item.href}`}
                     className="text-gray-100 hover:border-b-2 border-white dark:text-gray-300 hover:text-blue-600 font-medium py-2 transition-colors duration-200"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    {item}
+                    {item.name}
                   </a>
                 ))}
                 <button className="w-4/5 mt-4 px-6 py-3 bg-gray-100 text-black  font-semibold rounded-xl hover:bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-300">
